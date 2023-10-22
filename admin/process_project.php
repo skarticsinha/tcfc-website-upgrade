@@ -23,13 +23,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Move the featured image to the destination directory and rename it
     $featImgPath = $uploadDir . "feat_Img.jpg"; // Rename the file as "feat_Img.jpg"
     if (move_uploaded_file($_FILES["featImg"]["tmp_name"], $featImgPath)) {
-        // Image uploaded successfully
+        // Featured image uploaded successfully
     } else {
         echo "Error uploading the featured image: " . $_FILES["featImg"]["error"];
         exit; // Exit the script
     }
 
-    // Handle multiple project images
+    // Handle slider image upload (similar to featured image)
+    $sliderImgPath = $uploadDir . "slider_Img.jpg"; // Rename the file as "slider_Img.jpg"
+    if (move_uploaded_file($_FILES["sliderImg"]["tmp_name"], $sliderImgPath)) {
+        // Slider image uploaded successfully
+    } else {
+        echo "Error uploading the slider image: " . $_FILES["sliderImg"]["error"];
+        exit; // Exit the script
+    }
+
+    // Handle multiple project images (similar to your existing code)
     $imagePaths = []; // Initialize an array to store image paths
 
     foreach ($_FILES["projectImages"]["tmp_name"] as $key => $tmp_name) {
@@ -50,15 +59,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Store the image paths in the 'images' column as a comma-separated string
     $images = implode(", ", $imagePaths);
 
-    // Insert the data into the database with the 'images' column
-    $sql = "INSERT INTO Projects (clientName, projectLocation, projectName, brief, images) VALUES (?, ?, ?, ?, ?)";
+    // Insert the data into the database with the 'images' and 'slider_image' columns
+    $sql = "INSERT INTO Projects (clientName, projectLocation, projectName, brief, images, slider_image) VALUES (?, ?, ?, ?, ?, ?)";
 
     // Prepare the SQL statement
     $stmt = $conn->prepare($sql);
 
     if ($stmt) {
         // Bind parameters and execute the statement
-        $stmt->bind_param("sssss", $clientName, $location, $projectName, $brief, $uploadDir);
+        $stmt->bind_param("ssssss", $clientName, $location, $projectName, $brief, $images, $sliderImgPath);
 
         if ($stmt->execute()) {
             $conn->commit();

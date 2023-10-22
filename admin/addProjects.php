@@ -50,6 +50,26 @@
             </div>
         </div>
 
+        <!-- New slider image input -->
+        <div class="form-group">
+            <label for="sliderImg">Slider Image:</label>
+            <div class="custom-file-upload">
+                <input class="upHide" type="file" id="sliderImg" name="sliderImg" accept="image/*" onchange="showSelectedFile(this)">
+                <label for="sliderImg">
+                    <div class="upload-box">
+                        <div class="upload-icon">
+                            <i class="fa fa-file-image-o"></i>
+                        </div>
+                        <div class="upload-text">
+                            <h3>Upload slider image</h3>
+                            <span>or</span>
+                        </div>
+                        <label class="custom-upload-button" for="sliderImg">Browse</label>
+                    </div>
+                </label>
+            </div>
+        </div>
+
         <div class="form-group">
             <label for="projectImages">Project Images (Multiple):</label>
             <div class="custom-file-upload">
@@ -59,7 +79,7 @@
                         <div class="upload-icon">
                             <i class="fa fa-file-image-o"></i>
                         </div>
-                        <div class="upload-text">
+                        <div class = "upload-text">
                             <h3>Upload multiple project images</h3>
                             <span>or</span>
                         </div>

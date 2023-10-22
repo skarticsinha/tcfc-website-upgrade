@@ -160,7 +160,7 @@ function convertToRelativePath($input) {
                     $images = $row["images"];
 
                     // Use the first image as the feature image
-                    $featureImage = $images .  'feat_Img.jpg';
+                    $featureImage = $images .  'slider_Img.jpg';
 
                     echo '<a href="#soudi-' . $projectID . '">';
                     echo '<div class="item" data-aos="zoom-in-left" data-aos-duration="1000">';
@@ -302,7 +302,7 @@ if ($result->num_rows > 0) {
         $images = $row["images"];
 
         // Use the first image as the feature image
-        $featureImage = $images .  'feat_Img.jpg';
+        $featureImage = $images .  'slider_Img.jpg';
 
         echo '<a href="#soudi-' . $projectID . '">';
         echo '<div class="item" data-aos="zoom-in-left" data-aos-duration="1000">';
