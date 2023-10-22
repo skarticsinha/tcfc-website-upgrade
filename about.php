@@ -43,7 +43,7 @@
             <div class="header container-fluid navbar-default">
                 <div class="container d-flex">
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.svg" alt="TCFC" width="100px"></a>
+                    <a href="index.php"><img src="images/logo.svg" alt="TCFC" width="100px"></a>
                 </div>
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container-fluid">
@@ -54,11 +54,11 @@
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <ul class="nav navbar-nav">
-                                <li><a href="projects.html">projects</a></li>
-                                <li><a href="about.html" class="active">about us</a></li>
-                                <li><a href="services.html">services</a></li>
-                                <li><a href="secret-sauce.html">secret sauce</a></li>
-                                <li><a href="contact.html">talk to us</a></li>
+                                <li><a href="projects.php">projects</a></li>
+                                <li><a href="about.php" class="active">about us</a></li>
+                                <li><a href="services.php">services</a></li>
+                                <li><a href="secret-sauce.php">secret sauce</a></li>
+                                <li><a href="contact.php">talk to us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -392,7 +392,7 @@
 					<div class="col-md-6">
 						<div class="footer-info">
 							<div class="footer-logo" data-aos="fade-up" data-aos-duration="1000">
-								<a href="index.html"> <img src="images/footer-logo.png" alt="" class="img-fluid"> </a>
+								<a href="index.php"> <img src="images/footer-logo.png" alt="" class="img-fluid"> </a>
 							</div>
 						</div>
 					</div>
@@ -402,8 +402,8 @@
 
 								<!-- <h4 data-aos="fade-right" data-aos-duration="1000">Policies</h4>
 								<ul data-aos="flip-left" data-aos-duration="1000">
-									<li><a href="terms-conditions.html">Terms and Conditions</a> </li>
-									<li><a href="privacy-policy.html">Privacy Policy </a> </li>
+									<li><a href="terms-conditions.php">Terms and Conditions</a> </li>
+									<li><a href="privacy-policy.php">Privacy Policy </a> </li>
 								</ul>-->
 
 								
@@ -411,11 +411,11 @@
 							<div class="col-md-6 footer-links">
 								<h4 data-aos="fade-right" data-aos-duration="1000">Sitemap</h4>
 								<ul data-aos="flip-left" data-aos-duration="1000">
-									<li><a href="about.html">About Us</a> </li>
-									<li><a href="projects.html">Projects</a> </li>
-									<li><a href="services.html">Services</a></li>
-									<li><a href="secret-sauce.html">Secret sauce</a></li>
-									<li><a href="contact.html">Talk to us</a> </li>
+									<li><a href="about.php">About Us</a> </li>
+									<li><a href="projects.php">Projects</a> </li>
+									<li><a href="services.php">Services</a></li>
+									<li><a href="secret-sauce.php">Secret sauce</a></li>
+									<li><a href="contact.php">Talk to us</a> </li>
 								</ul>
 
 
@@ -545,7 +545,7 @@
             dat += '<button class=\'btn btn-default leftRs\'><i class=\"fa fa-fw fa-angle-left\"></i></button>'
             dat += '<button class=\'btn btn-default rightRs\'><i class=\"fa fa-fw fa-angle-right\"></i></button>    </div>'
             console.log(dat);
-            $("#customRes").html(null).append(dat);
+            $("#customRes").php(null).append(dat);
 
             if (!pageRefresh) {
                 ResCarouselSize();

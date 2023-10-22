@@ -1,0 +1,109 @@
+#projects{
+    margin: 0 5vw 20px 5vw;
+}
+
+.Btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+.filters {
+    border: 1px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.filterBtns {
+    margin: 0;
+    padding: 14px 10px 14px 10px; /* Increase padding for all filter buttons */
+    border-right: 1px solid #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.filterBtns:last-child {
+    border-right: 0;
+}
+
+/* Add styling for the active filter */
+.filterBtns.activeFilter {
+    background-color: rgba(179, 197, 209, 0.5);
+    padding: 10px; /* Increase padding for the active filter */
+}
+
+.addBtn {
+    margin-left: 10px; /* Add margin to separate the "Add Project" button */
+}
+
+.addProject {
+    padding: 10px; /* Set padding for the "Add Project" button */
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addProject:hover {
+    background-color: #0056b3; /* Change button background color on hover */
+}
+
+/* .popup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 5vw 20px 5vw;
+    height: 50vh;
+    width: 60vw;
+
+} */
+
+#addProjectsPage{
+    height: 70vh;
+    width: 50vw;
+}
+
+iframe{
+    border: none;
+}
+
+.database {
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 10px; /* Apply border-radius to the table wrapper */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #eee; /* Change border to 1px with a very light grey color */
+    padding: 8px;
+    text-align: center;
+    line-height: 2;
+    min-width: 75px;
+}
+
+th {
+    background-color: rgba(179, 197, 209, 0.5); /* Change background color for column names */
+}
+
+tr{
+    height: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Set a white background for columns fetched from the database */
+td {
+    background-color: white;
+}
