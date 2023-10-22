@@ -1,7 +1,7 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 // Include the database connection
 require_once("./db.php");
@@ -74,4 +74,4 @@ function removeDirectory($dir) {
 }
 
 // Redirect to projectsAdmin.php after 3 seconds
-header("refresh:3;url=projectsAdmin.php");
+header("refresh:3;url=/projectsAdmin.php");

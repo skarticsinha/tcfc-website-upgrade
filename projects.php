@@ -2,7 +2,19 @@
 // error_reporting(E_ALL);
 // ini_set('display_errors', 1);
 
-require_once("./admin/db.php")
+require_once("./admin/db.php");
+
+function convertToRelativePath($input) {
+    $directoryToRemove = '/home2/orioles1/tcfc.oriolesystems.in';
+    $output = str_replace($directoryToRemove, '', $input);
+
+    if (strpos($output, './') !== 0) {
+        $output = './' . $output;
+    }
+
+    return $output;
+}
+
 ?>
 
 <!doctype html>
@@ -155,7 +167,7 @@ require_once("./admin/db.php")
                     echo '<div class="tile">';
                     echo '<div class="gallery-img">';
                     echo '<div class="our-top-overly"></div>';
-                    echo '<img src="' . $featureImage . '" />';
+                    echo '<img src="' . convertToRelativePath($featureImage) . '" />';
                     echo '<h3>' . $projectName . '</h3>';
                     echo '</div>';
                     echo '</div>';
@@ -228,12 +240,11 @@ require_once("./admin/db.php")
                             $images = $row["images"];
                             $galleryLink = "saudi-" . strtolower(str_replace(" ", "-", $projectName)) . ".php";
 
-                            // Assuming $images contains a comma-separated list of image file paths, use the first image as the feature image
-                            $imagePaths = explode(',', $images);
-                            $featureImage = $imagePaths[0];
+                            $featureImage = $images .  'feat_Img.jpg';
+                            $reletive_path = convertToRelativePath($featureImage);
 
                             // Call the function to generate the project section with alternating flex direction
-                            generateProjectSection($location, $projectName, $description, $featureImage, $galleryLink, $isEven);
+                            generateProjectSection($location, $projectName, $description, $reletive_path, $galleryLink, $isEven);
 
                             // Toggle the isEven flag for the next iteration
                             $isEven = !$isEven;
@@ -298,7 +309,7 @@ if ($result->num_rows > 0) {
         echo '<div class="tile">';
         echo '<div class="gallery-img">';
         echo '<div class="our-top-overly"></div>';
-        echo '<img src="' . $featureImage . '" />';
+        echo '<img src="' . convertToRelativePath($featureImage) . '" />';
         echo '<h3>' . $projectName . '</h3>';
         echo '</div>';
         echo '</div>';
@@ -369,12 +380,11 @@ if ($result->num_rows > 0) {
                             $images = $row["images"];
                             $galleryLink = "uae-" . strtolower(str_replace(" ", "-", $projectName)) . ".php";
 
-                            // Assuming $images contains a comma-separated list of image file paths, use the first image as the feature image
-                            $imagePaths = explode(',', $images);
-                            $featureImage = $imagePaths[0];
+                            $featureImage = $images .  'feat_Img.jpg';
+                            $reletive_path = convertToRelativePath($featureImage);
 
                             // Call the function to generate the project section with alternating flex direction
-                            generateProjectSectionUAE($location, $projectName, $description, $featureImage, $galleryLink, $isEven);
+                            generateProjectSectionUAE($location, $projectName, $description, $reletive_path, $galleryLink, $isEven);
 
                             // Toggle the isEven flag for the next iteration
                             $isEven = !$isEven;

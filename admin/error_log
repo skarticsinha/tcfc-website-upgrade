@@ -1,0 +1,53 @@
+[10-Oct-2023 15:32:51 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:32:51 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:34:16 UTC] PHP Warning:  mkdir(): Permission denied in /home2/orioles1/tcfc.oriolesystems.in/admin/process_project.php on line 17
+[10-Oct-2023 15:34:40 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:34:40 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:36:19 UTC] PHP Warning:  mkdir(): Permission denied in /home2/orioles1/tcfc.oriolesystems.in/admin/process_project.php on line 17
+[10-Oct-2023 15:39:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[10-Oct-2023 15:39:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[10-Oct-2023 15:39:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[10-Oct-2023 15:40:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[10-Oct-2023 15:40:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[10-Oct-2023 15:41:01 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:41:01 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:42:00 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[10-Oct-2023 15:42:00 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[12-Oct-2023 11:00:05 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[12-Oct-2023 11:00:05 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[12-Oct-2023 14:03:21 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[12-Oct-2023 14:03:21 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[12-Oct-2023 14:09:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[12-Oct-2023 16:02:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[12-Oct-2023 16:06:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[15-Oct-2023 03:31:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/orioles1/tcfc.oriolesystems.in/admin/db.php:14) in /home2/orioles1/tcfc.oriolesystems.in/admin/remove_project.php on line 77
+[15-Oct-2023 17:40:53 UTC] PHP Warning:  Undefined variable $your_database_connection in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36
+[15-Oct-2023 17:40:53 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php:36
+Stack trace:
+#0 /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php(36): mysqli_query(NULL, 'SELECT project_...')
+#1 {main}
+  thrown in /home2/orioles1/tcfc.oriolesystems.in/admin/admin.php on line 36

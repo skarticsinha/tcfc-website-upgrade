@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $brief = $_POST["brief"];
 
     // Handle featured image upload
-    $uploadDir = "/opt/lampp/htdocs/tcfc-website-upgrade/gallery/$location/$projectName/";
+    $uploadDir = "/home2/orioles1/tcfc.oriolesystems.in/gallery/$location/$projectName/";
 
     if (!file_exists($uploadDir)) {
         // Create the directory if it doesn't exist
